@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário, Karina!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffccff;
+            color: #800080;
+            text-align: center;
+            padding: 20px;
+        }
+        .game-container {
+            margin-top: 20px;
+        }
+        .credits {
+            margin-top: 50px;
+            font-size: 0.8em;
+        }
+        button {
+            background-color: #ff66ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #ff33cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feliz Aniversário, Karina Campos Lima!</h1>
+        <p>Que seu dia seja repleto de amor, alegria e momentos inesquecíveis. Você é uma pessoa muito especial, e merece tudo de melhor na vida. Parabéns pelo seu dia!</p>
+    </header>
+
+    <div class="game-container">
+        <h2>Surpresa Interativa</h2>
+        <button onclick="playGame()">Clique para descobrir sua surpresa!</button>
+        <p id="game-result"></p>
+    </div>
+
+    <div class="credits">
+        <p>Site criado com amor por Pedro Henrique.</p>
+    </div>
+
+    <script>
+        function playGame() {
+            const surprises = [
+                "Você é uma estrela brilhante! 🌟",
+                "Felicidades hoje e sempre! 🎂",
+                "Aproveite sua festa, você merece! 🎉",
+                "Uma surpresa especial para uma pessoa especial! 💖"
+            ];
+            const randomIndex = Math.floor(Math.random() * surprises.length);
+            document.getElementById('game-result').innerText = surprises[randomIndex];
+        }
+    </script>
+</body>
+</html>
